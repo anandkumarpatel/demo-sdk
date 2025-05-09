@@ -1,0 +1,18 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+    Swagger Petstore:
+        inputs:
+            - location: ./openapi.yaml
+        registry:
+            location: registry.speakeasyapi.dev/readme-m0y/readme/swagger-petstore
+targets:
+    readmedeo:
+        target: typescript
+        source: Swagger Petstore
+        codeSamples:
+            registry:
+                location: registry.speakeasyapi.dev/readme-m0y/readme/swagger-petstore-typescript-code-samples
+            labelOverride:
+                fixedValue: Typescript (SDK)
+            blocking: false

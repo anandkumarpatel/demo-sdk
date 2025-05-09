@@ -1,0 +1,36 @@
+speakeasyVersion: 1.543.3
+sources:
+    Swagger Petstore:
+        sourceNamespace: swagger-petstore
+        sourceRevisionDigest: sha256:5bac8f1377dd120767f566e9debe896b9d38f72d28ab837151fa0248fcf3aaf3
+        sourceBlobDigest: sha256:5c17c265f86384562fab6915f0279b84d4c0971e634481ff2ce0f6739af4b023
+        tags:
+            - latest
+            - 1.0.0
+targets:
+    readmedeo:
+        source: Swagger Petstore
+        sourceNamespace: swagger-petstore
+        sourceRevisionDigest: sha256:5bac8f1377dd120767f566e9debe896b9d38f72d28ab837151fa0248fcf3aaf3
+        sourceBlobDigest: sha256:5c17c265f86384562fab6915f0279b84d4c0971e634481ff2ce0f6739af4b023
+        codeSamplesNamespace: swagger-petstore-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:aed4acf5355cf0fcc5b34edf22de324e62b9871687382d951383fc0d9e861e67
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        Swagger Petstore:
+            inputs:
+                - location: ./openapi.yaml
+            registry:
+                location: registry.speakeasyapi.dev/readme-m0y/readme/swagger-petstore
+    targets:
+        readmedeo:
+            target: typescript
+            source: Swagger Petstore
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/readme-m0y/readme/swagger-petstore-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false
