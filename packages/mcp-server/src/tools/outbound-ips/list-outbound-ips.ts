@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'outbound_ips',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/outbound_ips',
+  operationId: 'getOutboundIPs',
 };
 
 export const tool: Tool = {

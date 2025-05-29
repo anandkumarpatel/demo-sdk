@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.custom_pages',
   operation: 'write',
   tags: [],
+  httpMethod: 'delete',
+  httpPath: '/branches/{branch}/custom_pages/{slug}',
+  operationId: 'deleteCustomPage',
 };
 
 export const tool: Tool = {

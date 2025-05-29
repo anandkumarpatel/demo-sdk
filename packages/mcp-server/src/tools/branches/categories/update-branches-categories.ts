@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.categories',
   operation: 'write',
   tags: [],
+  httpMethod: 'patch',
+  httpPath: '/branches/{branch}/categories/{section}/{title}',
+  operationId: 'updateCategory',
 };
 
 export const tool: Tool = {

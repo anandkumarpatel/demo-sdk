@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'projects.apikeys',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/projects/{subdomain}/apikeys',
+  operationId: 'getAPIKeys',
 };
 
 export const tool: Tool = {

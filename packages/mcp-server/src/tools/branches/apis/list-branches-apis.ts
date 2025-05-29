@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.apis',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/branches/{branch}/apis',
+  operationId: 'getAPIs',
 };
 
 export const tool: Tool = {

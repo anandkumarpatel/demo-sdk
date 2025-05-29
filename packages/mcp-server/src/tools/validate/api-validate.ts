@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'validate',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/validate/api',
+  operationId: 'validateAPI',
 };
 
 export const tool: Tool = {

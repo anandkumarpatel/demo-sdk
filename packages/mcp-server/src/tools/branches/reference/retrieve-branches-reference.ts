@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.reference',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/branches/{branch}/reference/{slug}',
+  operationId: 'getReference',
 };
 
 export const tool: Tool = {

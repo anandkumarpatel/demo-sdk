@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'apply',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/apply',
+  operationId: 'getOpenRoles',
 };
 
 export const tool: Tool = {

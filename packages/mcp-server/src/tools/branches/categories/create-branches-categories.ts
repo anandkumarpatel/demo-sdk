@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.categories',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/branches/{branch}/categories',
+  operationId: 'createCategory',
 };
 
 export const tool: Tool = {

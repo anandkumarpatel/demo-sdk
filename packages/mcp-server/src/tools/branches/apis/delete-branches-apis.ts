@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.apis',
   operation: 'write',
   tags: [],
+  httpMethod: 'delete',
+  httpPath: '/branches/{branch}/apis/{filename}',
+  operationId: 'deleteAPI',
 };
 
 export const tool: Tool = {

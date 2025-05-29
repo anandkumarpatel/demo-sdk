@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'projects.apikeys',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/projects/{subdomain}/apikeys',
+  operationId: 'createAPIKey',
 };
 
 export const tool: Tool = {

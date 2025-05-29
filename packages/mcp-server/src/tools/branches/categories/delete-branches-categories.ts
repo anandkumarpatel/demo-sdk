@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.categories',
   operation: 'write',
   tags: [],
+  httpMethod: 'delete',
+  httpPath: '/branches/{branch}/categories/{section}/{title}',
+  operationId: 'deleteCategory',
 };
 
 export const tool: Tool = {

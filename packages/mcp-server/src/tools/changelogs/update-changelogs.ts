@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'changelogs',
   operation: 'write',
   tags: [],
+  httpMethod: 'patch',
+  httpPath: '/changelogs/{identifier}',
+  operationId: 'updateChangelog',
 };
 
 export const tool: Tool = {

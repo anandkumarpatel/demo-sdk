@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'branches.custom_pages',
   operation: 'read',
   tags: [],
+  httpMethod: 'get',
+  httpPath: '/branches/{branch}/custom_pages',
+  operationId: 'getCustomPages',
 };
 
 export const tool: Tool = {

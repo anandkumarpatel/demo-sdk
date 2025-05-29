@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'changelogs',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/changelogs',
+  operationId: 'createChangelog',
 };
 
 export const tool: Tool = {

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'projects.apikeys',
   operation: 'write',
   tags: [],
+  httpMethod: 'delete',
+  httpPath: '/projects/{subdomain}/apikeys/{api_key_id}',
+  operationId: 'deleteAPIKey',
 };
 
 export const tool: Tool = {

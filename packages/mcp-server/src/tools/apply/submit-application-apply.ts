@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   resource: 'apply',
   operation: 'write',
   tags: [],
+  httpMethod: 'post',
+  httpPath: '/apply',
+  operationId: 'applyToReadMe',
 };
 
 export const tool: Tool = {
