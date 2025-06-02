@@ -9,8 +9,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 Because it's not published yet, clone the repo and build it:
 
 ```sh
-git clone git@github.com:stainless-sdks/readme-v2-typescript.git
-cd readme-v2-typescript
+git clone git@github.com:anandkumarpatel/demo-sdk.git
+cd demo-sdk
 ./scripts/bootstrap
 ./scripts/build
 ```
@@ -40,11 +40,7 @@ For clients with a configuration JSON, it might look something like this:
   "mcpServers": {
     "readme_v2_api": {
       "command": "node",
-      "args": [
-        "/path/to/local/readme-v2-typescript/packages/mcp-server",
-        "--client=claude",
-        "--tools=dynamic"
-      ],
+      "args": ["/path/to/local/demo-sdk/packages/mcp-server", "--client=claude", "--tools=dynamic"],
       "env": {
         "README_V2_API_KEY": "My API Key"
       }
