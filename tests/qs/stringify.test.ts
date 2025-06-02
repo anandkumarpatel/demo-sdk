@@ -1,7 +1,7 @@
 import iconv from 'iconv-lite';
-import { stringify } from 'readme-v2/internal/qs';
-import { encode } from 'readme-v2/internal/qs/utils';
-import { StringifyOptions } from 'readme-v2/internal/qs/types';
+import { stringify } from 'testtesttest/internal/qs';
+import { encode } from 'testtesttest/internal/qs/utils';
+import { StringifyOptions } from 'testtesttest/internal/qs/types';
 import { empty_test_cases } from './empty-keys-cases';
 import assert from 'assert';
 

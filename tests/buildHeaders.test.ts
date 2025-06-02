@@ -1,5 +1,5 @@
 import { inspect } from 'node:util';
-import { buildHeaders, type HeadersLike, type NullableHeaders } from 'readme-v2/internal/headers';
+import { buildHeaders, type HeadersLike, type NullableHeaders } from 'testtesttest/internal/headers';
 
 function inspectNullableHeaders(headers: NullableHeaders) {
   return `NullableHeaders {${[

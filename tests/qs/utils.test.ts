@@ -1,4 +1,4 @@
-import { combine, merge, is_buffer, assign_single_source } from 'readme-v2/internal/qs/utils';
+import { combine, merge, is_buffer, assign_single_source } from 'testtesttest/internal/qs/utils';
 
 describe('merge()', function () {
   // t.deepEqual(merge(null, true), [null, true], 'merges true into null');

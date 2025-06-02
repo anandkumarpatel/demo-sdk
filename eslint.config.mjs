@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^readme-v2(/.*)?',
+              regex: '^testtesttest(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

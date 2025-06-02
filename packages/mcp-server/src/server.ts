@@ -4,7 +4,7 @@ import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { Endpoint, endpoints, HandlerFunction, query } from './tools';
 import { CallToolRequestSchema, ListToolsRequestSchema, Tool } from '@modelcontextprotocol/sdk/types.js';
-import ReadmeV2 from 'readme-v2';
+import ReadmeV2 from 'testtesttest';
 import {
   applyCompatibilityTransformations,
   ClientCapabilities,
@@ -18,7 +18,7 @@ export { endpoints } from './tools';
 // Create server instance
 export const server = new McpServer(
   {
-    name: 'readme_v2_api',
+    name: 'testtesttest_api',
     version: '0.0.2',
   },
   {

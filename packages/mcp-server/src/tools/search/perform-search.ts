@@ -2,7 +2,7 @@
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import type { Metadata } from '../';
-import ReadmeV2 from 'readme-v2';
+import ReadmeV2 from 'testtesttest';
 
 export const metadata: Metadata = {
   resource: 'search',

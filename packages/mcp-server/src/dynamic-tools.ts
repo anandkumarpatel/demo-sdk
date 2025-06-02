@@ -1,4 +1,4 @@
-import ReadmeV2 from 'readme-v2';
+import ReadmeV2 from 'testtesttest';
 import { Endpoint } from './tools';
 import { zodToJsonSchema } from 'zod-to-json-schema';
 import { z } from 'zod';
