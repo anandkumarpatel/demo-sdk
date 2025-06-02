@@ -19,7 +19,7 @@ export { endpoints } from './tools';
 export const server = new McpServer(
   {
     name: 'readme_v2_api',
-    version: '0.0.2',
+    version: '0.0.3',
   },
   {
     capabilities: {
