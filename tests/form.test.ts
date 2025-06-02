@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'readme-v2/internal/uploads';
-import { toFile } from 'readme-v2/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'testtesttest/internal/uploads';
+import { toFile } from 'testtesttest/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

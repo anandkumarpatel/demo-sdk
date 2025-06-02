@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { ReadmeV2 } from 'readme-v2';
+import { ReadmeV2 } from 'testtesttest';
 
 const { stringifyQuery } = ReadmeV2.prototype as any;
 

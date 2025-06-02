@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'readme-v2/core/api-promise';
+import { APIPromise } from 'testtesttest/core/api-promise';
 
 import util from 'node:util';
-import ReadmeV2 from 'readme-v2';
-import { APIUserAbortError } from 'readme-v2';
+import ReadmeV2 from 'testtesttest';
+import { APIUserAbortError } from 'testtesttest';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

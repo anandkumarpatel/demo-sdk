@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import ReadmeV2 from 'readme-v2';
+import ReadmeV2 from 'testtesttest';
 
 const client = new ReadmeV2({
   apiKey: 'My API Key',

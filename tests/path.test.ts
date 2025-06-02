@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'readme-v2/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from 'testtesttest/internal/utils/path';
 import { inspect } from 'node:util';
 
 describe('path template tag function', () => {

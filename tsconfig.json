@@ -9,8 +9,8 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "readme-v2/*": ["src/*"],
-      "readme-v2": ["src/index.ts"]
+      "testtesttest/*": ["src/*"],
+      "testtesttest": ["src/index.ts"]
     },
     "noEmit": true,
 

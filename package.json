@@ -1,5 +1,5 @@
 {
-  "name": "readme-v2",
+  "name": "testtesttest",
   "version": "0.0.2",
   "description": "The official TypeScript library for the Readme V2 API",
   "author": "Readme V2 <support@readme.io>",
@@ -47,8 +47,8 @@
     "typescript": "5.8.3"
   },
   "imports": {
-    "readme-v2": ".",
-    "readme-v2/*": "./src/*"
+    "testtesttest": ".",
+    "testtesttest/*": "./src/*"
   },
   "exports": {
     ".": {

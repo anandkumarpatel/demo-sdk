@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'readme-v2/internal/to-file';
-import { toFile } from 'readme-v2/core/uploads';
+import type { ResponseLike } from 'testtesttest/internal/to-file';
+import { toFile } from 'testtesttest/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('readme-v2/core/uploads');
+    const uploads = await import('testtesttest/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(
