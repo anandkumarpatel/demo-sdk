@@ -1,6 +1,6 @@
 {
   "name": "readme-v2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The official TypeScript library for the Readme V2 API",
   "author": "Readme V2 <support@readme.io>",
   "types": "dist/index.d.ts",
