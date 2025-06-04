@@ -26,13 +26,9 @@ const client = new ReadmeV2({
   apiKey: process.env['README_V2_API_KEY'], // This is the default and can be omitted
 });
 
-async function main() {
-  const apikey = await client.projects.apikeys.create('REPLACE_ME', { label: 'REPLACE_ME' });
+const apikey = await client.projects.apikeys.create('REPLACE_ME', { label: 'REPLACE_ME' });
 
-  console.log(apikey.data);
-}
-
-main();
+console.log(apikey.data);
 ```
 
 ### Request & Response types
@@ -47,15 +43,11 @@ const client = new ReadmeV2({
   apiKey: process.env['README_V2_API_KEY'], // This is the default and can be omitted
 });
 
-async function main() {
-  const params: ReadmeV2.Projects.ApikeyCreateParams = { label: 'REPLACE_ME' };
-  const apikey: ReadmeV2.Projects.ApikeyCreateResponse = await client.projects.apikeys.create(
-    'REPLACE_ME',
-    params,
-  );
-}
-
-main();
+const params: ReadmeV2.Projects.ApikeyCreateParams = { label: 'REPLACE_ME' };
+const apikey: ReadmeV2.Projects.ApikeyCreateResponse = await client.projects.apikeys.create(
+  'REPLACE_ME',
+  params,
+);
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
@@ -68,21 +60,17 @@ a subclass of `APIError` will be thrown:
 
 <!-- prettier-ignore -->
 ```ts
-async function main() {
-  const apikey = await client.projects.apikeys
-    .create('REPLACE_ME', { label: 'REPLACE_ME' })
-    .catch(async (err) => {
-      if (err instanceof ReadmeV2.APIError) {
-        console.log(err.status); // 400
-        console.log(err.name); // BadRequestError
-        console.log(err.headers); // {server: 'nginx', ...}
-      } else {
-        throw err;
-      }
-    });
-}
-
-main();
+const apikey = await client.projects.apikeys
+  .create('REPLACE_ME', { label: 'REPLACE_ME' })
+  .catch(async (err) => {
+    if (err instanceof ReadmeV2.APIError) {
+      console.log(err.status); // 400
+      console.log(err.name); // BadRequestError
+      console.log(err.headers); // {server: 'nginx', ...}
+    } else {
+      throw err;
+    }
+  });
 ```
 
 Error codes are as follows:
