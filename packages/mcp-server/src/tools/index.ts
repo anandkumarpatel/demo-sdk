@@ -1,7 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import ReadmeV2 from 'testtesttest';
-import { Tool } from '@modelcontextprotocol/sdk/types.js';
+import { Metadata, Endpoint, HandlerFunction } from './types';
+
+export { Metadata, Endpoint, HandlerFunction };
 
 import retrieve_projects from './projects/retrieve-projects';
 import create_projects_apikeys from './projects/apikeys/create-projects-apikeys';
@@ -40,24 +41,6 @@ import delete_changelogs from './changelogs/delete-changelogs';
 import list_outbound_ips from './outbound-ips/list-outbound-ips';
 import perform_search from './search/perform-search';
 import api_validate from './validate/api-validate';
-
-export type HandlerFunction = (client: ReadmeV2, args: Record<string, unknown> | undefined) => Promise<any>;
-
-export type Metadata = {
-  resource: string;
-  operation: 'read' | 'write';
-  tags: string[];
-
-  httpMethod?: string;
-  httpPath?: string;
-  operationId?: string;
-};
-
-export type Endpoint = {
-  metadata: Metadata;
-  tool: Tool;
-  handler: HandlerFunction;
-};
 
 export const endpoints: Endpoint[] = [];
 

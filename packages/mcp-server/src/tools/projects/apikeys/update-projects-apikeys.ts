@@ -1,5 +1,7 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
+import { asTextContentResult } from 'readme-v2-mcp/tools/types';
+
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import type { Metadata } from '../../';
 import ReadmeV2 from 'testtesttest';
@@ -33,9 +35,9 @@ export const tool: Tool = {
   },
 };
 
-export const handler = (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
+export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
   const { api_key_id, ...body } = args as any;
-  return client.projects.apikeys.update(api_key_id, body);
+  return asTextContentResult(await client.projects.apikeys.update(api_key_id, body));
 };
 
 export default { metadata, tool, handler };
