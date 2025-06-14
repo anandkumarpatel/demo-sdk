@@ -2,7 +2,7 @@
 
 import type { ReadmeV2 } from '../client';
 
-export class APIResource {
+export abstract class APIResource {
   protected _client: ReadmeV2;
 
   constructor(client: ReadmeV2) {
