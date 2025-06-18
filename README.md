@@ -1,6 +1,6 @@
 # Readme V2 TypeScript API Library
 
-[![NPM version](https://img.shields.io/npm/v/testtesttest.svg)](https://npmjs.org/package/testtesttest) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/testtesttest)
+[![NPM version](<https://img.shields.io/npm/v/testtesttest.svg?label=npm%20(stable)>)](https://npmjs.org/package/testtesttest) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/testtesttest)
 
 This library provides convenient access to the Readme V2 REST API from server-side TypeScript or JavaScript.
 
