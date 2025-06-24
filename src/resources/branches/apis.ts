@@ -157,7 +157,7 @@ export namespace APIRetrieveResponse {
     /**
      * The API schema.
      */
-    schema: Record<string, unknown>;
+    schema: { [key: string]: unknown };
 
     /**
      * The sources by which this API definition was ingested.
