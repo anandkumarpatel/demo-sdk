@@ -31,7 +31,7 @@ export interface ValidateAPIResponse {
   /**
    * The API schema.
    */
-  schema: Record<string, unknown>;
+  schema: { [key: string]: unknown };
 }
 
 export interface ValidateAPIParams {
