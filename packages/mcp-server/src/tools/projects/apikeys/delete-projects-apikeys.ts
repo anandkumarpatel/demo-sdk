@@ -34,8 +34,8 @@ export const tool: Tool = {
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
   const { api_key_id, ...body } = args as any;
-  await client.projects.apikeys.delete(api_key_id, body);
-  return asTextContentResult('Successful tool call');
+  const response = await client.projects.apikeys.delete(api_key_id, body).asResponse();
+  return asTextContentResult(await response.text());
 };
 
 export default { metadata, tool, handler };

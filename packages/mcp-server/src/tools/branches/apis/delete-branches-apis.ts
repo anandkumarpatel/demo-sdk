@@ -34,8 +34,8 @@ export const tool: Tool = {
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
   const { filename, ...body } = args as any;
-  await client.branches.apis.delete(filename, body);
-  return asTextContentResult('Successful tool call');
+  const response = await client.branches.apis.delete(filename, body).asResponse();
+  return asTextContentResult(await response.text());
 };
 
 export default { metadata, tool, handler };
