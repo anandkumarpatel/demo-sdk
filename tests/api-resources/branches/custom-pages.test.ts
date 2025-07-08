@@ -10,7 +10,7 @@ const client = new ReadmeV2({
 describe('resource customPages', () => {
   // skipped: tests are disabled for the time being
   test.skip('create: only required params', async () => {
-    const responsePromise = client.branches.customPages.create('v9605132.1324476774-!:* .!-e53_F', {
+    const responsePromise = client.branches.customPages.create('v9605132.1324476774-: !e3abFuO', {
       title: 'title',
     });
     const rawResponse = await responsePromise.asResponse();
@@ -24,7 +24,7 @@ describe('resource customPages', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('create: required and optional params', async () => {
-    const response = await client.branches.customPages.create('v9605132.1324476774-!:* .!-e53_F', {
+    const response = await client.branches.customPages.create('v9605132.1324476774-: !e3abFuO', {
       title: 'title',
       appearance: { fullscreen: true },
       content: { body: 'body', type: 'markdown' },
@@ -42,7 +42,7 @@ describe('resource customPages', () => {
   // skipped: tests are disabled for the time being
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.branches.customPages.retrieve('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -56,14 +56,14 @@ describe('resource customPages', () => {
   // skipped: tests are disabled for the time being
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.branches.customPages.retrieve('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
   });
 
   // skipped: tests are disabled for the time being
   test.skip('update: only required params', async () => {
     const responsePromise = client.branches.customPages.update('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -77,7 +77,7 @@ describe('resource customPages', () => {
   // skipped: tests are disabled for the time being
   test.skip('update: required and optional params', async () => {
     const response = await client.branches.customPages.update('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
       appearance: { fullscreen: true },
       content: { body: 'body', type: 'markdown' },
       metadata: {
@@ -94,7 +94,7 @@ describe('resource customPages', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('list', async () => {
-    const responsePromise = client.branches.customPages.list('v9605132.1324476774-!:* .!-e53_F');
+    const responsePromise = client.branches.customPages.list('v9605132.1324476774-: !e3abFuO');
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -107,7 +107,7 @@ describe('resource customPages', () => {
   // skipped: tests are disabled for the time being
   test.skip('delete: only required params', async () => {
     const responsePromise = client.branches.customPages.delete('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -121,7 +121,7 @@ describe('resource customPages', () => {
   // skipped: tests are disabled for the time being
   test.skip('delete: required and optional params', async () => {
     const response = await client.branches.customPages.delete('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
   });
 });
