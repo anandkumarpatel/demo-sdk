@@ -10,7 +10,7 @@ const client = new ReadmeV2({
 describe('resource categories', () => {
   // skipped: tests are disabled for the time being
   test.skip('create: only required params', async () => {
-    const responsePromise = client.branches.categories.create('v9605132.1324476774-!:* .!-e53_F', {
+    const responsePromise = client.branches.categories.create('v9605132.1324476774-: !e3abFuO', {
       title: 'title',
     });
     const rawResponse = await responsePromise.asResponse();
@@ -24,7 +24,7 @@ describe('resource categories', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('create: required and optional params', async () => {
-    const response = await client.branches.categories.create('v9605132.1324476774-!:* .!-e53_F', {
+    const response = await client.branches.categories.create('v9605132.1324476774-: !e3abFuO', {
       title: 'title',
       section: 'guide',
     });
@@ -33,7 +33,7 @@ describe('resource categories', () => {
   // skipped: tests are disabled for the time being
   test.skip('update: only required params', async () => {
     const responsePromise = client.branches.categories.update('title', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
       path_section: 'guides',
     });
     const rawResponse = await responsePromise.asResponse();
@@ -48,7 +48,7 @@ describe('resource categories', () => {
   // skipped: tests are disabled for the time being
   test.skip('update: required and optional params', async () => {
     const response = await client.branches.categories.update('title', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
       path_section: 'guides',
       position: 0,
       body_section: 'guide',
@@ -59,7 +59,7 @@ describe('resource categories', () => {
   // skipped: tests are disabled for the time being
   test.skip('delete: only required params', async () => {
     const responsePromise = client.branches.categories.delete('title', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
       section: 'guides',
     });
     const rawResponse = await responsePromise.asResponse();
@@ -74,7 +74,7 @@ describe('resource categories', () => {
   // skipped: tests are disabled for the time being
   test.skip('delete: required and optional params', async () => {
     const response = await client.branches.categories.delete('title', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
       section: 'guides',
     });
   });

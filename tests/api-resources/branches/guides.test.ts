@@ -10,8 +10,8 @@ const client = new ReadmeV2({
 describe('resource guides', () => {
   // skipped: tests are disabled for the time being
   test.skip('create: only required params', async () => {
-    const responsePromise = client.branches.guides.create('v9605132.1324476774-!:* .!-e53_F', {
-      category: { uri: '/branches/vstable/categories/guides/0CO"k' },
+    const responsePromise = client.branches.guides.create('v9605132.1324476774-: !e3abFuO', {
+      category: { uri: '/branches/vstable/categories/guides/C"g*W' },
       title: 'title',
     });
     const rawResponse = await responsePromise.asResponse();
@@ -25,8 +25,8 @@ describe('resource guides', () => {
 
   // skipped: tests are disabled for the time being
   test.skip('create: required and optional params', async () => {
-    const response = await client.branches.guides.create('v9605132.1324476774-!:* .!-e53_F', {
-      category: { uri: '/branches/vstable/categories/guides/0CO"k' },
+    const response = await client.branches.guides.create('v9605132.1324476774-: !e3abFuO', {
+      category: { uri: '/branches/vstable/categories/guides/C"g*W' },
       title: 'title',
       allow_crawlers: 'enabled',
       content: {
@@ -41,7 +41,7 @@ describe('resource guides', () => {
         keywords: 'keywords',
         title: 'title',
       },
-      parent: { uri: '/branches/vstable/guides/"g*zbv' },
+      parent: { uri: '/branches/vstable/guides/k0zop|' },
       position: 0,
       privacy: { view: 'public' },
       slug: 'x',
@@ -53,7 +53,7 @@ describe('resource guides', () => {
   // skipped: tests are disabled for the time being
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.branches.guides.retrieve('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -67,14 +67,14 @@ describe('resource guides', () => {
   // skipped: tests are disabled for the time being
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.branches.guides.retrieve('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
   });
 
   // skipped: tests are disabled for the time being
   test.skip('update: only required params', async () => {
     const responsePromise = client.branches.guides.update('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -88,9 +88,9 @@ describe('resource guides', () => {
   // skipped: tests are disabled for the time being
   test.skip('update: required and optional params', async () => {
     const response = await client.branches.guides.update('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
       allow_crawlers: 'enabled',
-      category: { uri: '/branches/vstable/categories/guides/0CO"k' },
+      category: { uri: '/branches/vstable/categories/guides/C"g*W' },
       content: {
         body: 'body',
         excerpt: 'excerpt',
@@ -103,7 +103,7 @@ describe('resource guides', () => {
         keywords: 'keywords',
         title: 'title',
       },
-      parent: { uri: '/branches/vstable/guides/"g*zbv' },
+      parent: { uri: '/branches/vstable/guides/k0zop|' },
       position: 0,
       privacy: { view: 'public' },
       body_slug: 'x',
@@ -116,7 +116,7 @@ describe('resource guides', () => {
   // skipped: tests are disabled for the time being
   test.skip('delete: only required params', async () => {
     const responsePromise = client.branches.guides.delete('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -130,7 +130,7 @@ describe('resource guides', () => {
   // skipped: tests are disabled for the time being
   test.skip('delete: required and optional params', async () => {
     const response = await client.branches.guides.delete('slug', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
   });
 });
