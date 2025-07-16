@@ -1,10 +1,9 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
 import { maybeFilter } from 'readme-v2-mcp/filtering';
-import { asTextContentResult } from 'readme-v2-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'readme-v2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../../';
 import ReadmeV2 from 'testtesttest';
 
 export const metadata: Metadata = {
