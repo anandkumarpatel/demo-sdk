@@ -28,11 +28,7 @@ export const server = new McpServer(
     name: 'testtesttest_api',
     version: '0.1.0',
   },
-  {
-    capabilities: {
-      tools: {},
-    },
-  },
+  { capabilities: { tools: {} } },
 );
 
 /**
