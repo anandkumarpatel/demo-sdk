@@ -24,9 +24,8 @@ export const tool: Tool = {
       branch: {
         type: 'string',
       },
-      slug: {
+      path_slug: {
         type: 'string',
-        description: 'The accessible URL slug for the page.',
       },
       allow_crawlers: {
         type: 'string',
@@ -41,7 +40,6 @@ export const tool: Tool = {
             description: 'A URI to the category resource.',
           },
         },
-        required: [],
       },
       content: {
         type: 'object',
@@ -64,7 +62,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           next: {
             type: 'object',
@@ -112,10 +109,8 @@ export const tool: Tool = {
                 },
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       metadata: {
         type: 'object',
@@ -130,7 +125,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           keywords: {
             type: 'string',
@@ -139,7 +133,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       parent: {
         type: 'object',
@@ -148,7 +141,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       position: {
         type: 'number',
@@ -161,7 +153,10 @@ export const tool: Tool = {
             enum: ['public', 'anyone_with_link'],
           },
         },
-        required: [],
+      },
+      body_slug: {
+        type: 'string',
+        description: 'The accessible URL slug for the page.',
       },
       state: {
         type: 'string',
@@ -175,6 +170,7 @@ export const tool: Tool = {
         enum: ['api_config', 'basic', 'endpoint', 'link', 'webhook'],
       },
     },
+    required: ['branch', 'path_slug'],
   },
 };
 

@@ -40,6 +40,7 @@ export const tool: Tool = {
         enum: ['true', 'false'],
       },
     },
+    required: ['branch', 'slug'],
   },
 };
 
