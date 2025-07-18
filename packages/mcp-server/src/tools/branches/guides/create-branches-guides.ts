@@ -63,7 +63,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           next: {
             type: 'object',
@@ -111,10 +110,8 @@ export const tool: Tool = {
                 },
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       metadata: {
         type: 'object',
@@ -129,7 +126,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           keywords: {
             type: 'string',
@@ -138,7 +134,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       parent: {
         type: 'object',
@@ -147,7 +142,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       position: {
         type: 'number',
@@ -160,7 +154,6 @@ export const tool: Tool = {
             enum: ['public', 'anyone_with_link'],
           },
         },
-        required: [],
       },
       slug: {
         type: 'string',
@@ -175,6 +168,7 @@ export const tool: Tool = {
         enum: ['api_config', 'basic', 'endpoint', 'link', 'webhook'],
       },
     },
+    required: ['branch', 'category', 'title'],
   },
 };
 

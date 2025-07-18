@@ -128,13 +128,11 @@ export const tool: Tool = {
                 description: 'This API operation has parameters or schemas that serialize to XML.',
               },
             },
-            required: [],
           },
           uri: {
             type: 'string',
           },
         },
-        required: [],
       },
       api_config: {
         type: 'string',
@@ -154,11 +152,9 @@ export const tool: Tool = {
                     'URI of the recipe that this API reference is connected to. The recipe and API reference must exist within the same version.',
                 },
               },
-              required: [],
             },
           },
         },
-        required: [],
       },
       content: {
         type: 'object',
@@ -181,7 +177,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           next: {
             type: 'object',
@@ -229,10 +224,8 @@ export const tool: Tool = {
                 },
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       metadata: {
         type: 'object',
@@ -247,7 +240,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           keywords: {
             type: 'string',
@@ -256,7 +248,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       parent: {
         type: 'object',
@@ -265,7 +256,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       position: {
         type: 'number',
@@ -278,7 +268,6 @@ export const tool: Tool = {
             enum: ['public', 'anyone_with_link'],
           },
         },
-        required: [],
       },
       slug: {
         type: 'string',
@@ -293,6 +282,7 @@ export const tool: Tool = {
         enum: ['api_config', 'basic', 'endpoint', 'link', 'webhook'],
       },
     },
+    required: ['branch', 'category', 'title'],
   },
 };
 
