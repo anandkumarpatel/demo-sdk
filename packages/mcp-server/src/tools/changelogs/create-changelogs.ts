@@ -98,6 +98,7 @@ export const tool: Tool = {
     },
     required: ['title'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {

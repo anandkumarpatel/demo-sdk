@@ -63,6 +63,7 @@ export const tool: Tool = {
     },
     required: ['job', 'name'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {

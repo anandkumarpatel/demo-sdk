@@ -37,6 +37,9 @@ export const tool: Tool = {
     },
     required: ['branch', 'filename'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {

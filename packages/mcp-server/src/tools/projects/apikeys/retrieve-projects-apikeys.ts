@@ -37,6 +37,9 @@ export const tool: Tool = {
     },
     required: ['subdomain', 'api_key_id'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {

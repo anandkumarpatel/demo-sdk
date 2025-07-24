@@ -52,6 +52,9 @@ export const tool: Tool = {
     },
     required: ['query'],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
