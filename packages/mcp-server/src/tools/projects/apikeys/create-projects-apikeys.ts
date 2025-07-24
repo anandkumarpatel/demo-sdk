@@ -37,6 +37,7 @@ export const tool: Tool = {
     },
     required: ['subdomain', 'label'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
