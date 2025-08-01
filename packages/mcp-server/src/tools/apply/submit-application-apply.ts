@@ -67,8 +67,8 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
-  const body = args as any;
-  return asTextContentResult(await maybeFilter(args, await client.apply.submitApplication(body)));
+  const { jq_filter, ...body } = args as any;
+  return asTextContentResult(await maybeFilter(jq_filter, await client.apply.submitApplication(body)));
 };
 
 export default { metadata, tool, handler };

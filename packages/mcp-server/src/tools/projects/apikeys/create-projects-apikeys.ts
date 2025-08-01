@@ -41,8 +41,10 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
-  const { subdomain, ...body } = args as any;
-  return asTextContentResult(await maybeFilter(args, await client.projects.apikeys.create(subdomain, body)));
+  const { subdomain, jq_filter, ...body } = args as any;
+  return asTextContentResult(
+    await maybeFilter(jq_filter, await client.projects.apikeys.create(subdomain, body)),
+  );
 };
 
 export default { metadata, tool, handler };
