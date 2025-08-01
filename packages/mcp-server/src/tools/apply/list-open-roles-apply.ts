@@ -37,7 +37,8 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
-  return asTextContentResult(await maybeFilter(args, await client.apply.listOpenRoles()));
+  const { jq_filter } = args as any;
+  return asTextContentResult(await maybeFilter(jq_filter, await client.apply.listOpenRoles()));
 };
 
 export default { metadata, tool, handler };

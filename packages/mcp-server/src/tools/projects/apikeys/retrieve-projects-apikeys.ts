@@ -43,9 +43,9 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
-  const { api_key_id, ...body } = args as any;
+  const { api_key_id, jq_filter, ...body } = args as any;
   return asTextContentResult(
-    await maybeFilter(args, await client.projects.apikeys.retrieve(api_key_id, body)),
+    await maybeFilter(jq_filter, await client.projects.apikeys.retrieve(api_key_id, body)),
   );
 };
 

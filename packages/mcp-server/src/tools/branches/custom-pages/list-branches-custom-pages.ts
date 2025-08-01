@@ -40,8 +40,8 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
-  const { branch, ...body } = args as any;
-  return asTextContentResult(await maybeFilter(args, await client.branches.customPages.list(branch)));
+  const { branch, jq_filter, ...body } = args as any;
+  return asTextContentResult(await maybeFilter(jq_filter, await client.branches.customPages.list(branch)));
 };
 
 export default { metadata, tool, handler };

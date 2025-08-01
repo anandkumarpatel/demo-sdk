@@ -41,8 +41,8 @@ export const tool: Tool = {
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {
-  const { identifier, ...body } = args as any;
-  return asTextContentResult(await maybeFilter(args, await client.changelogs.retrieve(identifier)));
+  const { identifier, jq_filter, ...body } = args as any;
+  return asTextContentResult(await maybeFilter(jq_filter, await client.changelogs.retrieve(identifier)));
 };
 
 export default { metadata, tool, handler };
