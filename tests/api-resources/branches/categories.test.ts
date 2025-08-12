@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource categories', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.branches.categories.create('v9605132.1324476774-: !e3abFuO', {
       title: 'title',
@@ -22,7 +22,7 @@ describe('resource categories', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.branches.categories.create('v9605132.1324476774-: !e3abFuO', {
       title: 'title',
@@ -30,7 +30,7 @@ describe('resource categories', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.branches.categories.update('title', {
       branch: 'v9605132.1324476774-: !e3abFuO',
@@ -45,7 +45,7 @@ describe('resource categories', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.branches.categories.update('title', {
       branch: 'v9605132.1324476774-: !e3abFuO',
@@ -56,7 +56,7 @@ describe('resource categories', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.branches.categories.delete('title', {
       branch: 'v9605132.1324476774-: !e3abFuO',
@@ -71,7 +71,7 @@ describe('resource categories', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.branches.categories.delete('title', {
       branch: 'v9605132.1324476774-: !e3abFuO',

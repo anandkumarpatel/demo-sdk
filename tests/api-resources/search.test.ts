@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource search', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('perform: only required params', async () => {
     const responsePromise = client.search.perform({ query: 'query' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource search', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('perform: required and optional params', async () => {
     const response = await client.search.perform({
       query: 'query',

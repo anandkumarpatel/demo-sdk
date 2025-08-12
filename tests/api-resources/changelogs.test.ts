@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource changelogs', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.changelogs.create({ title: 'title' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource changelogs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.changelogs.create({
       title: 'title',
@@ -39,7 +39,7 @@ describe('resource changelogs', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.changelogs.retrieve('3af0b057194fb913baa7c960');
     const rawResponse = await responsePromise.asResponse();
@@ -51,7 +51,7 @@ describe('resource changelogs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.changelogs.update('3af0b057194fb913baa7c960');
     const rawResponse = await responsePromise.asResponse();
@@ -63,7 +63,7 @@ describe('resource changelogs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -89,7 +89,7 @@ describe('resource changelogs', () => {
     ).rejects.toThrow(ReadmeV2.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.changelogs.list();
     const rawResponse = await responsePromise.asResponse();
@@ -101,7 +101,7 @@ describe('resource changelogs', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -112,7 +112,7 @@ describe('resource changelogs', () => {
     ).rejects.toThrow(ReadmeV2.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.changelogs.delete('3af0b057194fb913baa7c960');
     const rawResponse = await responsePromise.asResponse();
