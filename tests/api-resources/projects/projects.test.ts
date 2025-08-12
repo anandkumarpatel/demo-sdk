@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource projects', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.projects.retrieve();
     const rawResponse = await responsePromise.asResponse();

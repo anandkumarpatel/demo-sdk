@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource guides', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.branches.guides.create('v9605132.1324476774-: !e3abFuO', {
       category: { uri: '/branches/vstable/categories/guides/C"g*W' },
@@ -23,7 +23,7 @@ describe('resource guides', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.branches.guides.create('v9605132.1324476774-: !e3abFuO', {
       category: { uri: '/branches/vstable/categories/guides/C"g*W' },
@@ -50,7 +50,7 @@ describe('resource guides', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.branches.guides.retrieve('slug', {
       branch: 'v9605132.1324476774-: !e3abFuO',
@@ -64,14 +64,14 @@ describe('resource guides', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.branches.guides.retrieve('slug', {
       branch: 'v9605132.1324476774-: !e3abFuO',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.branches.guides.update('slug', {
       branch: 'v9605132.1324476774-: !e3abFuO',
@@ -85,7 +85,7 @@ describe('resource guides', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.branches.guides.update('slug', {
       branch: 'v9605132.1324476774-: !e3abFuO',
@@ -113,7 +113,7 @@ describe('resource guides', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.branches.guides.delete('slug', {
       branch: 'v9605132.1324476774-: !e3abFuO',
@@ -127,7 +127,7 @@ describe('resource guides', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.branches.guides.delete('slug', {
       branch: 'v9605132.1324476774-: !e3abFuO',
