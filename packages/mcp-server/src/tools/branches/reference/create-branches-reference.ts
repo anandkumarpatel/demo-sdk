@@ -56,6 +56,7 @@ export const tool: Tool = {
           },
           schema: {
             type: 'object',
+            additionalProperties: true,
           },
           source: {
             type: 'string',

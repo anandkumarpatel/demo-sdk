@@ -18,21 +18,24 @@ export const metadata: Metadata = {
 export const tool: Tool = {
   name: 'api_validate',
   description:
-    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nValidates an API definition for uploading to your ReadMe project.\n\n>🚧 ReadMe's API v2 is currently in beta.\n >This API and its documentation are a work in progress. While we don't expect any major breaking changes, you may encounter occasional issues as we work toward a stable release. Make sure to [check out our API migration guide](https://docs.readme.com/main/reference/api-migration-guide), and [feel free to reach out](mailto:support@readme.io) if you have any questions or feedback!\n\n# Response Schema\n```json\n{\n  type: 'object',\n  properties: {\n    schema: {\n      type: 'object',\n      description: 'The API schema.'\n    }\n  },\n  required: [    'schema'\n  ]\n}\n```",
+    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nValidates an API definition for uploading to your ReadMe project.\n\n>🚧 ReadMe's API v2 is currently in beta.\n >This API and its documentation are a work in progress. While we don't expect any major breaking changes, you may encounter occasional issues as we work toward a stable release. Make sure to [check out our API migration guide](https://docs.readme.com/main/reference/api-migration-guide), and [feel free to reach out](mailto:support@readme.io) if you have any questions or feedback!\n\n# Response Schema\n```json\n{\n  type: 'object',\n  properties: {\n    schema: {\n      type: 'object',\n      description: 'The API schema.',\n      additionalProperties: true\n    }\n  },\n  required: [    'schema'\n  ]\n}\n```",
   inputSchema: {
     type: 'object',
     properties: {
       schema: {
         type: 'object',
         description: 'The API definition.',
+        additionalProperties: true,
       },
       upload_source: {
         type: 'object',
         description: 'The source that the API definition is being uploaded through.',
+        additionalProperties: true,
       },
       url: {
         type: 'object',
         description: 'The URL where the API definition is hosted.',
+        additionalProperties: true,
       },
       jq_filter: {
         type: 'string',

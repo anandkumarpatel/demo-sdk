@@ -31,14 +31,17 @@ export const tool: Tool = {
       schema: {
         type: 'object',
         description: 'The API definition.',
+        additionalProperties: true,
       },
       upload_source: {
         type: 'object',
         description: 'The source that the API definition is being uploaded through.',
+        additionalProperties: true,
       },
       url: {
         type: 'object',
         description: 'The URL where the API definition is hosted.',
+        additionalProperties: true,
       },
       jq_filter: {
         type: 'string',
