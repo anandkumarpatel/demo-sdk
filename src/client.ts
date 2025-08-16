@@ -727,6 +727,7 @@ export class ReadmeV2 {
   search: API.Search = new API.Search(this);
   validate: API.Validate = new API.Validate(this);
 }
+
 ReadmeV2.Projects = Projects;
 ReadmeV2.Branches = Branches;
 ReadmeV2.Apply = Apply;
@@ -734,6 +735,7 @@ ReadmeV2.Changelogs = Changelogs;
 ReadmeV2.OutboundIPs = OutboundIPs;
 ReadmeV2.Search = Search;
 ReadmeV2.Validate = Validate;
+
 export declare namespace ReadmeV2 {
   export type RequestOptions = Opts.RequestOptions;
 
