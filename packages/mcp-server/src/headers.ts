@@ -17,7 +17,7 @@ export const parseAuthHeaders = (req: IncomingMessage): Partial<ClientOptions> =
   }
 
   const apiKey =
-    req.headers['x-readme-v2-api-key'] instanceof Array ?
+    Array.isArray(req.headers['x-readme-v2-api-key']) ?
       req.headers['x-readme-v2-api-key'][0]
     : req.headers['x-readme-v2-api-key'];
   return { apiKey };
