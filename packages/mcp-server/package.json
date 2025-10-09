@@ -1,6 +1,6 @@
 {
   "name": "readme-v2-mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The official MCP Server for the Readme V2 API",
   "author": "Readme V2 <support@readme.io>",
   "types": "dist/index.d.ts",
