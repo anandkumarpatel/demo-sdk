@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource outboundIPs', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.outboundIPs.list();
     const rawResponse = await responsePromise.asResponse();

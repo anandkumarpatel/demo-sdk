@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'readme-v2-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'readme-v2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../../';
 import ReadmeV2 from 'testtesttest';
 
 export const metadata: Metadata = {
@@ -25,9 +24,8 @@ export const tool: Tool = {
       branch: {
         type: 'string',
       },
-      slug: {
+      path_slug: {
         type: 'string',
-        description: 'The accessible URL slug for the page.',
       },
       allow_crawlers: {
         type: 'string',
@@ -50,6 +48,7 @@ export const tool: Tool = {
           },
           schema: {
             type: 'object',
+            additionalProperties: true,
           },
           source: {
             type: 'string',
@@ -122,13 +121,11 @@ export const tool: Tool = {
                 description: 'This API operation has parameters or schemas that serialize to XML.',
               },
             },
-            required: [],
           },
           uri: {
             type: 'string',
           },
         },
-        required: [],
       },
       category: {
         type: 'object',
@@ -138,7 +135,6 @@ export const tool: Tool = {
             description: 'A URI to the category resource.',
           },
         },
-        required: [],
       },
       connections: {
         type: 'object',
@@ -154,11 +150,9 @@ export const tool: Tool = {
                     'URI of the recipe that this API reference is connected to. The recipe and API reference must exist within the same version.',
                 },
               },
-              required: [],
             },
           },
         },
-        required: [],
       },
       content: {
         type: 'object',
@@ -181,7 +175,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           next: {
             type: 'object',
@@ -229,10 +222,8 @@ export const tool: Tool = {
                 },
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       metadata: {
         type: 'object',
@@ -247,7 +238,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           keywords: {
             type: 'string',
@@ -256,7 +246,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       parent: {
         type: 'object',
@@ -265,7 +254,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       position: {
         type: 'number',
@@ -278,7 +266,10 @@ export const tool: Tool = {
             enum: ['public', 'anyone_with_link'],
           },
         },
-        required: [],
+      },
+      body_slug: {
+        type: 'string',
+        description: 'The accessible URL slug for the page.',
       },
       state: {
         type: 'string',
@@ -292,7 +283,9 @@ export const tool: Tool = {
         enum: ['api_config', 'basic', 'endpoint', 'link', 'webhook'],
       },
     },
+    required: ['branch', 'path_slug'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {

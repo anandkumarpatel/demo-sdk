@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource apply', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('listOpenRoles', async () => {
     const responsePromise = client.apply.listOpenRoles();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource apply', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('submitApplication: only required params', async () => {
     const responsePromise = client.apply.submitApplication({ job: 'job', name: 'x' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource apply', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('submitApplication: required and optional params', async () => {
     const response = await client.apply.submitApplication({
       job: 'job',

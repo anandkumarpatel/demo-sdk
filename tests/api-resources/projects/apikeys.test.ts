@@ -8,7 +8,7 @@ const client = new ReadmeV2({
 });
 
 describe('resource apikeys', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.projects.apikeys.create('subdomain', { label: 'x' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource apikeys', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.projects.apikeys.create('subdomain', { label: 'x' });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.projects.apikeys.retrieve('3af0b057194fb913baa7c960', {
       subdomain: 'subdomain',
@@ -39,14 +39,14 @@ describe('resource apikeys', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.projects.apikeys.retrieve('3af0b057194fb913baa7c960', {
       subdomain: 'subdomain',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.projects.apikeys.update('3af0b057194fb913baa7c960', {
       subdomain: 'subdomain',
@@ -61,7 +61,7 @@ describe('resource apikeys', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.projects.apikeys.update('3af0b057194fb913baa7c960', {
       subdomain: 'subdomain',
@@ -69,7 +69,7 @@ describe('resource apikeys', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.projects.apikeys.list('subdomain');
     const rawResponse = await responsePromise.asResponse();
@@ -81,7 +81,7 @@ describe('resource apikeys', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -93,7 +93,7 @@ describe('resource apikeys', () => {
     ).rejects.toThrow(ReadmeV2.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
     const responsePromise = client.projects.apikeys.delete('3af0b057194fb913baa7c960', {
       subdomain: 'subdomain',
@@ -107,7 +107,7 @@ describe('resource apikeys', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
     const response = await client.projects.apikeys.delete('3af0b057194fb913baa7c960', {
       subdomain: 'subdomain',

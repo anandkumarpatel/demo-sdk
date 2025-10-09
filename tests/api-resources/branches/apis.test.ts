@@ -8,9 +8,9 @@ const client = new ReadmeV2({
 });
 
 describe('resource apis', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create', async () => {
-    const responsePromise = client.branches.apis.create('v9605132.1324476774-!:* .!-e53_F');
+    const responsePromise = client.branches.apis.create('v9605132.1324476774-: !e3abFuO');
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -20,22 +20,22 @@ describe('resource apis', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.branches.apis.create(
-        'v9605132.1324476774-!:* .!-e53_F',
+        'v9605132.1324476774-: !e3abFuO',
         { schema: {}, upload_source: {}, url: {} },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(ReadmeV2.NotFoundError);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
-    const responsePromise = client.branches.apis.retrieve('! "g*zbv -.t{yml', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+    const responsePromise = client.branches.apis.retrieve('ok0zop|-{p_bnyml', {
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -46,17 +46,17 @@ describe('resource apis', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
-    const response = await client.branches.apis.retrieve('! "g*zbv -.t{yml', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+    const response = await client.branches.apis.retrieve('ok0zop|-{p_bnyml', {
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: only required params', async () => {
-    const responsePromise = client.branches.apis.update('! "g*zbv -.t{yml', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+    const responsePromise = client.branches.apis.update('ok0zop|-{p_bnyml', {
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -67,19 +67,19 @@ describe('resource apis', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('update: required and optional params', async () => {
-    const response = await client.branches.apis.update('! "g*zbv -.t{yml', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+    const response = await client.branches.apis.update('ok0zop|-{p_bnyml', {
+      branch: 'v9605132.1324476774-: !e3abFuO',
       schema: {},
       upload_source: {},
       url: {},
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('list', async () => {
-    const responsePromise = client.branches.apis.list('v9605132.1324476774-!:* .!-e53_F');
+    const responsePromise = client.branches.apis.list('v9605132.1324476774-: !e3abFuO');
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -89,10 +89,10 @@ describe('resource apis', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: only required params', async () => {
-    const responsePromise = client.branches.apis.delete('! "g*zbv -.t{yml', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+    const responsePromise = client.branches.apis.delete('ok0zop|-{p_bnyml', {
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
@@ -103,10 +103,10 @@ describe('resource apis', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('delete: required and optional params', async () => {
-    const response = await client.branches.apis.delete('! "g*zbv -.t{yml', {
-      branch: 'v9605132.1324476774-!:* .!-e53_F',
+    const response = await client.branches.apis.delete('ok0zop|-{p_bnyml', {
+      branch: 'v9605132.1324476774-: !e3abFuO',
     });
   });
 });

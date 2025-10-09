@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'readme-v2-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'readme-v2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../../';
 import ReadmeV2 from 'testtesttest';
 
 export const metadata: Metadata = {
@@ -64,7 +63,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           next: {
             type: 'object',
@@ -112,10 +110,8 @@ export const tool: Tool = {
                 },
               },
             },
-            required: [],
           },
         },
-        required: [],
       },
       metadata: {
         type: 'object',
@@ -130,7 +126,6 @@ export const tool: Tool = {
                 type: 'string',
               },
             },
-            required: [],
           },
           keywords: {
             type: 'string',
@@ -139,7 +134,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       parent: {
         type: 'object',
@@ -148,7 +142,6 @@ export const tool: Tool = {
             type: 'string',
           },
         },
-        required: [],
       },
       position: {
         type: 'number',
@@ -161,7 +154,6 @@ export const tool: Tool = {
             enum: ['public', 'anyone_with_link'],
           },
         },
-        required: [],
       },
       slug: {
         type: 'string',
@@ -176,7 +168,9 @@ export const tool: Tool = {
         enum: ['api_config', 'basic', 'endpoint', 'link', 'webhook'],
       },
     },
+    required: ['branch', 'category', 'title'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: ReadmeV2, args: Record<string, unknown> | undefined) => {

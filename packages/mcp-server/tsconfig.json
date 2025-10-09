@@ -7,10 +7,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": "./",
     "paths": {
-      "readme-v2-mcp/*": ["src/*"],
-      "readme-v2-mcp": ["src/index.ts"]
+      "readme-v2-mcp/*": ["./src/*"],
+      "readme-v2-mcp": ["./src/index.ts"]
     },
     "noEmit": true,
 

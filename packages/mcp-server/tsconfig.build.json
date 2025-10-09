@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "readme-v2-mcp/*": ["dist/src/*"],
-      "readme-v2-mcp": ["dist/src/index.ts"]
+      "readme-v2-mcp/*": ["./dist/src/*"],
+      "readme-v2-mcp": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

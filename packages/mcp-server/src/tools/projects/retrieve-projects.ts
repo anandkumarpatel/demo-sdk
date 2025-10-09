@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'readme-v2-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'readme-v2-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../';
 import ReadmeV2 from 'testtesttest';
 
 export const metadata: Metadata = {
@@ -22,6 +21,10 @@ export const tool: Tool = {
   inputSchema: {
     type: 'object',
     properties: {},
+    required: [],
+  },
+  annotations: {
+    readOnlyHint: true,
   },
 };
 
